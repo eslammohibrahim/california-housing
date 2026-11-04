@@ -1,0 +1,23 @@
+{
+  "best_model": "Gradient Boosting",
+  "results": {
+    "Linear Regression": {
+      "MAE ($)": 44551,
+      "RMSE ($)": 60324,
+      "R2": 0.62,
+      "CV R2 (train)": "0.613 \u00b1 0.041"
+    },
+    "Random Forest": {
+      "MAE ($)": 31067,
+      "RMSE ($)": 46450,
+      "R2": 0.775,
+      "CV R2 (train)": "0.774 \u00b1 0.006"
+    },
+    "Gradient Boosting": {
+      "MAE ($)": 28099,
+      "RMSE ($)": 41729,
+      "R2": 0.818,
+      "CV R2 (train)": "0.817 \u00b1 0.009"
+    }
+  }
+}
