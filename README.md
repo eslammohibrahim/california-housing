@@ -1,5 +1,7 @@
 # California House Price Prediction
 
+[![tests](https://github.com/eslammohibrahim/california-housing/actions/workflows/tests.yml/badge.svg)](https://github.com/eslammohibrahim/california-housing/actions/workflows/tests.yml)
+
 Predicting the median house value of California housing blocks from census data, and comparing a simple baseline with two tree-based models.
 
 ## Data
@@ -52,6 +54,7 @@ pip install -r requirements.txt
 python src/explore.py   # stats + figures in reports/figures
 python src/train.py     # trains the models, saves the best one to models/
 python src/predict.py   # predicts the price for an example block
+pytest                  # data pipeline tests (no download needed)
 ```
 
 ## Project structure
@@ -62,6 +65,8 @@ src/
   explore.py   exploratory analysis and figures
   train.py     model training, evaluation, and comparison
   predict.py   prediction with the saved model
+tests/
+  test_data.py cleaning, features and split
 reports/
   figures/     generated plots
   results.json metrics for all models
